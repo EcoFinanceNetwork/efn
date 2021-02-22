@@ -48,7 +48,7 @@ ECO will run on EcoFinance Network in the same way as ETH runs on Ethereum so th
 ECO will be used to:
 
 1. pay `gas` to deploy or invoke Smart Contract on EFN
-2. perform cross-chain operations, such as transfer token assets across EcoFinance Network and Binance Chain.
+2. perform cross-chain operations, such as transfer token assets across EcoFinance Network.
 
 ## Building the source
 
