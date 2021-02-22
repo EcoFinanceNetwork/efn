@@ -44,10 +44,10 @@ It contains two parts:
 
 ## Native Token
 
-ECO will run on EcoFinance Network in the same way as ETH runs on Ethereum so that it remains as `native token` for BSC. This means, 
+ECO will run on EcoFinance Network in the same way as ETH runs on Ethereum so that it remains as `native token` for EFN. This means, 
 ECO will be used to:
 
-1. pay `gas` to deploy or invoke Smart Contract on BSC
+1. pay `gas` to deploy or invoke Smart Contract on EFN
 2. perform cross-chain operations, such as transfer token assets across EcoFinance Network and Binance Chain.
 
 ## Building the source
@@ -76,7 +76,7 @@ directory.
 
 |    Command    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :-----------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  **`geth`**   | Main EcoFinance Network client binary. It is the entry point into the BSC network (main-, test- or private net), capable of running as a full node (default), archive node (retaining all historical state) or a light node (retrieving data live). It has the same and more RPC and other interface as go-ethereum and can be used by other processes as a gateway into the BSC network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `geth --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options.          |
+|  **`geth`**   | Main EcoFinance Network client binary. It is the entry point into the EFN network (main-, test- or private net), capable of running as a full node (default), archive node (retaining all historical state) or a light node (retrieving data live). It has the same and more RPC and other interface as go-ethereum and can be used by other processes as a gateway into the EFN network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `geth --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options.          |
 |   `abigen`,`bootnode`,`evm`, `gethrpctest`,`rlpdump`,`puppeth`     | **These binaries are exactly the same as the binaries built in go-ethereum repo.**|
 
 ## Running `geth`
@@ -149,7 +149,7 @@ can reuse the same connection for multiple requests!
 
 **Note: Please understand the security implications of opening up an HTTP/WS based
 transport before doing so! Hackers on the internet are actively trying to subvert
-BSC nodes with exposed APIs! Further, all browser tabs can access locally
+EFN nodes with exposed APIs! Further, all browser tabs can access locally
 running web servers, so malicious web pages could try to subvert locally available
 APIs!**
 
