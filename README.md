@@ -1,12 +1,12 @@
 ## EcoFinance Network
 
-The goal of EcoFinance Network is to bring programmability and interoperability to Binance Chain. In order to embrace the existing popular community and advanced technology, it will bring huge benefits by staying compatible with all the existing smart contracts on Ethereum and Ethereum tooling. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
+The goal of EcoFinance Network is to bring programmability and interoperability to EcoFinance Chain. In order to embrace the existing popular community and advanced technology, it will bring huge benefits by staying compatible with all the existing smart contracts on Ethereum and Ethereum tooling. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
 
-EcoFinance Network starts its development based on Binance Smart Chain fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
+EcoFinance Network starts its development based on EcoFinance Smart Chain fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
 
 But from that baseline of EVM compatible, EcoFinance Network introduces  a system of 21 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection and other slashing logic guarantee security, stability, and chain finality.
 
-Cross-chain transfer and other communication are possible due to native support of interoperability. Relayers and on-chain contracts are developed to support that. Binance DEX remains a liquid venue of the exchange of assets on both chains. This dual-chain architecture will be ideal for users to take advantage of the fast trading on one side and build their decentralized apps on the other side. **The EcoFinance Network** will be:
+Cross-chain transfer and other communication are possible due to native support of interoperability. Relayers and on-chain contracts are developed to support that. EcoFinance DEX remains a liquid venue of the exchange of assets on both chains. This dual-chain architecture will be ideal for users to take advantage of the fast trading on one side and build their decentralized apps on the other side. **The EcoFinance Network** will be:
 
 - **A self-sovereign blockchain**: Provides security and safety with elected validators.
 - **EVM-compatible**: Supports all the existing Ethereum tooling along with faster finality and cheaper transaction fees.
@@ -29,14 +29,14 @@ To combine DPoS and PoA for consensus, EcoFinance Network implement a novel cons
 
 1. Blocks are produced by a limited set of validators.
 2. Validators take turns to produce blocks in a PoA manner, similar to Ethereum's Clique consensus engine.
-3. Validator set are elected in and out based on a staking based governance on Binance Chain.
+3. Validator set are elected in and out based on a staking based governance on EcoFinance Chain.
 4. The validator set change is relayed via a cross-chain communication mechanism.
 5. Parlia consensus engine will interact with a set of [system contracts](https://github.com/binance-chain/docs-site/blob/add-bsc/docs/smart-chain/guides/concepts/system-contract.md) to achieve liveness slash, revenue distributing and validator set renewing func.
 
  
-### Light Client of Binance Chain  
+### Light Client of EcoFinance Chain  
 
-To achieve the cross-chain communication from Binance Chain to EcoFinance Network, need introduce a on-chain light client verification algorithm.
+To achieve the cross-chain communication from EcoFinance Chain to EcoFinance Network, need introduce a on-chain light client verification algorithm.
 It contains two parts:
 
 1. [Stateless Precompiled contracts](https://github.com/binance-chain/bsc/blob/master/core/vm/contracts_lightclient.go) to do tendermint header verification and Merkle Proof verification.
@@ -48,7 +48,7 @@ ECO will run on EcoFinance Network in the same way as ETH runs on Ethereum so th
 ECO will be used to:
 
 1. pay `gas` to deploy or invoke Smart Contract on EFN
-2. perform cross-chain operations, such as transfer token assets across EcoFinance Network.
+2. perform cross-chain operations, such as transfer token assets across EcoFinance Network and EcoFinance Chain.
 
 ## Building the source
 
