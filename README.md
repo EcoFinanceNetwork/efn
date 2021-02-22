@@ -2,7 +2,7 @@
 
 The goal of EcoFinance Network is to bring programmability and interoperability to EcoFinance Chain. In order to embrace the existing popular community and advanced technology, it will bring huge benefits by staying compatible with all the existing smart contracts on Ethereum and Ethereum tooling. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
 
-EcoFinance Network starts its development based on EcoFinance Smart Chain fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
+EcoFinance Network starts its development based on EcoFinance Network fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
 
 But from that baseline of EVM compatible, EcoFinance Network introduces  a system of 21 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection and other slashing logic guarantee security, stability, and chain finality.
 
